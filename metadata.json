@@ -1,0 +1,6 @@
+{
+  "name": "Kuis Interaktif Mengenal Lubang Hitam",
+  "description": "Media Interaktif Pembelajaran Astronomi untuk mengenal lubang hitam.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

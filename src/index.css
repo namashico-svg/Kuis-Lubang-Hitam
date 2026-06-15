@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom print styles to ensure proper certificate rendering and hide UI features */
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  #cosmic-bg, 
+  #ambient-synth-toggle, 
+  #ai-assistant-drawer, 
+  #ai-assistant-toggle,
+  #result-container > div:first-child,
+  #result-container > div:nth-child(2),
+  #result-container > div:last-child {
+    display: none !important;
+  }
+  #printable-certificate {
+    border: 3px double black !important;
+    color: black !important;
+    background-color: white !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    width: 100% !important;
+    font-size: 11pt !important;
+  }
+}
